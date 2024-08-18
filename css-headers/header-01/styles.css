@@ -3,8 +3,9 @@
     margin: 0;
 }
 
-h1{
+html{
     text-align: center;
+    background-color: rgb(250, 213, 189);
 }
 
 .menu-bar {
@@ -15,7 +16,7 @@ h1{
     right: 0;
     height: 70px;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(79, 79, 255);
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -24,8 +25,33 @@ h1{
 .location-container {
     display: flex;
     flex-direction: row;
+    margin-right: 20px;
+    list-style: none;
 }
 
-.location-container p {
+.location-container a {
     margin-right: 10px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.sub-menu-container {
+    display: none;
+    list-style: none;
+    position: absolute;
+    min-width: 150px;
+    right: 0;
+    top: 70px;
+    background-color: rebeccapurple;
+}
+
+.sub-menu-container > li {
+    margin-right: 20px;
+}
+
+.menu-bar:hover {
+    .sub-menu-container{
+        display: block;
+    }
 }
