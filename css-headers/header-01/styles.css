@@ -1,0 +1,31 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.menu-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    height: 70px;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.location-container p {
+    margin-right: 10px;
+}
