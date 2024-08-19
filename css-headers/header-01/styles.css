@@ -50,8 +50,10 @@ html{
     margin-right: 20px;
 }
 
-.menu-bar:hover {
+.menu-bar li:nth-child(1):focus-within{
     .sub-menu-container{
         display: block;
+        z-index: 1;
+        pointer-events: visible;
     }
 }
